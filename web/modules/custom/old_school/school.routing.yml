@@ -1,0 +1,21 @@
+entity.school.collection:
+  path: '/admin/school'
+  defaults:
+    _entity_list: 'example_entity'
+    _title: 'School Entity'
+  requirements:
+    _permission: 'administer school entity'
+
+entity.school.add_form:
+  path: '/school/add'
+  defaults:
+    _entity_form: 'school.add'
+    _title: 'Add Example Entity'
+  requirements:
+    _permission: 'administer school entity'
+
+entity.school.edit_form:
+  path: '/school/{school}/edit'
+  defaults:
+    _entity_form: 'school.edit'
+    _title_callback: '\Drupal\your

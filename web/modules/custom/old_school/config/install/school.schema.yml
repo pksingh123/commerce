@@ -1,0 +1,23 @@
+school.school_entity_type:
+  type: entity
+  label: 'school Entity'
+  base table: school
+  data_table: school_field_data
+  entity_keys:
+    id:
+      type: serial
+      label: 'ID'
+  bundle keys:
+    bundle: type
+  label_callback: 'school_label'
+  fieldable: true
+  translatable: true
+  render_controller_class: 'Drupal\Core\Entity\EntityViewDisplay'
+  form_controller_class: 'Drupal\Core\Entity\EntityFormController'
+  route_provider_class: 'Drupal\Core\Entity\Routing\AdminHtmlRouteProvider'
+  links:
+    canonical: '/school/{school}'
+    add-page: '/school/add'
+    edit-form: '/school/{school_entity}/edit'
+    delete-form: '/school/{school}/delete'
+    collection: '/admin/school'

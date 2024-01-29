@@ -1,0 +1,11 @@
+{
+  "name": "drupal/paypaytm",
+  "type": "drupal-module",
+  "description": "Provides Commerce integration for Paytm Payment Gateway",
+  "homepage": "http://drupal.org/project/paypaytm",
+  "license": "GPL-2.0+",
+  "require": {
+    "drupal/commerce": "~2",
+    "paytm/paytm-pg": "*"
+  }
+}

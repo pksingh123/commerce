@@ -1,0 +1,17 @@
+name: Pay Paytm
+type: module
+description: 'Provides Commerce integration for Paytm Payment Gateway.'
+package: Commerce (contrib)
+# core: 8.x
+dependencies:
+  - commerce_payment
+
+# version: '8.x-1'
+core_version_requirement: ^8 || ^9 || ^10
+# project: 'paypaytm'
+# datestamp: 1531392524
+
+# Information added by Drupal.org packaging script on 2020-12-03
+version: '1.0.x-dev'
+project: 'paypaytm'
+datestamp: 1606983470
