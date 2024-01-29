@@ -1,0 +1,9 @@
+uuid: 0202e1ef-2139-4864-8a86-0668e02fd823
+langcode: en
+status: true
+dependencies: {  }
+currencyCode: AED
+name: 'United Arab Emirates Dirham'
+numericCode: '784'
+symbol: AED
+fractionDigits: 2

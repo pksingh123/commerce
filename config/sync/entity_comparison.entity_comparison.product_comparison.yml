@@ -1,0 +1,14 @@
+uuid: 69594e2d-ffa5-46dc-b150-2b6b925c1f33
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_display.commerce_product_variation.default.default_product_comparison
+    - core.entity_view_mode.commerce_product_variation.default_product_comparison
+id: product_comparison
+label: 'product comparison'
+add_link_text: 'Add to comparison list'
+remove_link_text: 'Remove from the comparison'
+limit: 4
+entity_type: commerce_product_variation
+bundle_type: default

@@ -1,0 +1,22 @@
+uuid: 4b7fcff9-e276-4866-af73-b0a975b73230
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tags
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+      entity_translation_unified_form_enable: '1'
+      entity_translation_unified_form_theme: EntityTranslationUnifiedFormInlineMode
+      entity_translation_unified_form_language: current
+      entity_translation_unified_form_translate_labels: '0'
+id: taxonomy_term.tags
+target_entity_type_id: taxonomy_term
+target_bundle: tags
+default_langcode: site_default
+language_alterable: true

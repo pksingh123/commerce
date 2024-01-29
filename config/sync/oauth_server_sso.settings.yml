@@ -1,0 +1,21 @@
+oauth_server_sso_customer_admin_email: null
+oauth_server_sso_license_key: null
+oauth_server_sso_customer_id: ''
+oauth_server_sso_customer_admin_token: ''
+oauth_server_sso_customer_api_key: ''
+oauth_server_sso_customer_admin_phone: null
+oauth_server_sso_tx_id: null
+oauth_server_sso_customer_admin_password: ''
+enable_oauth_server: true
+enable_openid: true
+uid_attr_name: id
+uuid_attr_name: sub
+mail_attr_name: email
+name_attr_name: username
+_core:
+  default_config_hash: EFR0qotryX8Bs7D63ATpzk6ifxg_bBzflOSrCTg3PFs
+oauth_server_sso_enable_login: false
+oauth_server_sso_username_attribute: ''
+oauth_server_sso_status: ''
+oauth_server_sso_add_client_status: add_client
+miniorange_oauth_uninstall_status: 0

@@ -1,0 +1,23 @@
+uuid: 8643126c-39da-4b8e-a171-7f1ae1d0cd80
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_product
+    - dynamic_entity_reference
+    - media
+id: commerce_product_variation.field_product_image
+field_name: field_product_image
+entity_type: commerce_product_variation
+type: dynamic_entity_reference
+settings:
+  exclude_entity_types: false
+  entity_type_ids:
+    media: media
+module: dynamic_entity_reference
+locked: false
+cardinality: 10
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,25 @@
+uuid: e1976c73-2191-44da-b7b9-04169821fe85
+langcode: en
+status: true
+dependencies: {  }
+currencyCode: AED
+denominations:
+  0:
+    label: 1AED
+    amount: 1
+  1:
+    label: Nickel
+    amount: 5
+  2:
+    label: Dime
+    amount: 10
+  3:
+    label: Quarter
+    amount: 25
+  4:
+    label: '100'
+    amount: 100
+  5:
+    label: AED5
+    amount: 100
+  actions: {  }

@@ -1,0 +1,7 @@
+tips:
+  search-api-index-fields-label:
+    label: التسمية
+  search-api-index-fields-machine-name:
+    label: 'الاسم الآلي'
+  search-api-index-fields-type:
+    label: النوع

@@ -1,0 +1,10 @@
+uuid: ca178902-39f6-4485-98e2-5040ed7cbc3c
+langcode: en
+status: true
+dependencies:
+  module:
+    - redirect
+id: redirect.token
+label: Token
+targetEntityType: redirect
+cache: true

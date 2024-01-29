@@ -1,0 +1,23 @@
+uuid: 7781d727-0a75-4eca-a947-f65e8c83e1b2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_dfgf
+    - node.type.article
+  module:
+    - link
+id: node.article.field_dfgf
+field_name: field_dfgf
+entity_type: node
+bundle: article
+label: dfgf
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

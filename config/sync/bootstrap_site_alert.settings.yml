@@ -1,0 +1,7 @@
+_core:
+  default_config_hash: IKnRc16UMnleKsZqgrWChFck9giaAQN6UTJ0AslLglw
+bootstrap_site_alert_active: false
+bootstrap_site_alert_severity: null
+bootstrap_site_alert_dismiss: false
+bootstrap_site_alert_message: ''
+bootstrap_site_alert_key: '123'

@@ -1,0 +1,26 @@
+uuid: 8ba787bd-a023-436d-a89a-037168e26c09
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+  enforced:
+    module:
+      - commerce_pos
+_core:
+  default_config_hash: z1w__rgrA86JVcocYyC3kJS53r9kdhoy3N_3e6wNJnU
+id: user.field_cashier_id
+field_name: field_cashier_id
+entity_type: user
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

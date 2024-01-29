@@ -1,0 +1,20 @@
+uuid: 2d226d64-8611-42a0-ac35-b9c57df147e4
+langcode: en
+status: false
+dependencies:
+  module:
+    - sitewide_alert_block
+  theme:
+    - olivero
+id: olivero_sitewidealert
+theme: olivero
+region: content
+weight: -8
+provider: null
+plugin: sitewide_alert_block
+settings:
+  id: sitewide_alert_block
+  label: 'Sitewide Alert'
+  label_display: visible
+  provider: sitewide_alert_block
+visibility: {  }

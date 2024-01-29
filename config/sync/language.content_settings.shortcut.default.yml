@@ -1,0 +1,22 @@
+uuid: a9b81bb2-29f2-481f-b4b6-7e2dd7e928c4
+langcode: en
+status: true
+dependencies:
+  config:
+    - shortcut.set.default
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+      entity_translation_unified_form_enable: '0'
+      entity_translation_unified_form_theme: EntityTranslationUnifiedFormInlineMode
+      entity_translation_unified_form_language: current
+      entity_translation_unified_form_translate_labels: '0'
+id: shortcut.default
+target_entity_type_id: shortcut
+target_bundle: default
+default_langcode: site_default
+language_alterable: false

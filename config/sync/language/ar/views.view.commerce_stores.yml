@@ -1,0 +1,37 @@
+display:
+  default:
+    display_title: الرئيسي
+    display_options:
+      fields:
+        is_default:
+          label: الافتراضي
+          separator: ', '
+        name:
+          label: الاسم
+          separator: ', '
+        changed:
+          label: التحديث
+          separator: ', '
+        type:
+          label: النوع
+          separator: ', '
+        operations:
+          label: عمليات
+      pager:
+        options:
+          expose:
+            items_per_page_options_all_label: '- الكل -'
+            offset_label: الإزاحة
+      exposed_form:
+        options:
+          submit_button: تطبيق
+          reset_button_label: 'إعادة الضبط'
+          exposed_sorts_label: 'الترتيب حسب'
+          sort_asc_label: تصاعدي
+          sort_desc_label: تنازلي
+      filters:
+        type:
+          expose:
+            label: النوع
+  page_1:
+    display_title: الصفحة

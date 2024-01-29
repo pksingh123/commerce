@@ -1,0 +1,25 @@
+uuid: 7dbde6c1-c224-4d14-af23-ce0b931cc6b5
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_order
+    - user
+  enforced:
+    module:
+      - commerce_pos
+_core:
+  default_config_hash: ip9SVhATfuT6PraRsDsoqfGHHLUvNwlu0zSQ4wIV4-o
+id: commerce_order.field_cashier
+field_name: field_cashier
+entity_type: commerce_order
+type: entity_reference
+settings:
+  target_type: user
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

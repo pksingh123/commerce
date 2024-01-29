@@ -1,0 +1,25 @@
+uuid: bc04aae0-d10e-4ce8-9bd8-2d8c4ad21bab
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_cashier_id
+  module:
+    - user
+  enforced:
+    module:
+      - commerce_pos
+_core:
+  default_config_hash: rmPKRCtzWtyfKcNbSVjjUwBHn8B-D6Bi0DjxEFMBM80
+id: user.user.field_cashier_id
+field_name: field_cashier_id
+entity_type: user
+bundle: user
+label: 'Cashier ID'
+description: 'Cashier ID for Commerce POS Role'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

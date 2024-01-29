@@ -1,0 +1,29 @@
+uuid: a2b2c01b-d1c5-47b5-b22a-0161012c80f4
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - commerce_pos
+_core:
+  default_config_hash: dbFYyIvff9eX-eF1_lPW8-syiyJX0qPRSjWq-fkfce4
+id: pos_credit
+label: Credit
+weight: null
+plugin: manual
+configuration:
+  display_label: Credit
+  mode: n/a
+  payment_method_types:
+    - credit_card
+  collect_billing_information: true
+  instructions:
+    value: ''
+    format: plain_text
+conditions:
+  -
+    plugin: order_type
+    configuration:
+      bundles:
+        - pos
+conditionOperator: AND

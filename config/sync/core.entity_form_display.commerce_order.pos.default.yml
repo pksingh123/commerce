@@ -1,0 +1,79 @@
+uuid: 0f3b595f-825c-455b-8a8d-3925299e706d
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_order.commerce_order_type.pos
+    - field.field.commerce_order.pos.field_cashier
+    - field.field.commerce_order.pos.field_register
+  module:
+    - commerce_order
+    - commerce_pos
+_core:
+  default_config_hash: 3m931_cEyQM7dqZROXQC3J3V-GmG48v5LaZb0Vn4MBg
+id: commerce_order.pos.default
+targetEntityType: commerce_order
+bundle: pos
+mode: default
+content:
+  adjustments:
+    type: commerce_adjustment_default
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  cart:
+    type: boolean_checkbox
+    weight: 20
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  coupons:
+    type: entity_reference_autocomplete
+    weight: 5
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  mail:
+    type: email_default
+    weight: 2
+    region: content
+    settings:
+      placeholder: ''
+      size: 60
+    third_party_settings: {  }
+  order_items:
+    type: pos_order_item_widget
+    weight: 0
+    region: content
+    settings:
+      num_results: 10
+      placeholder: 'Scan or enter product name or SKU'
+      purchasable_entity_view_mode: commerce_pos_product_select
+      size: 60
+      allow_decimal: true
+      decimal_step: '0.1'
+    third_party_settings: {  }
+  uid:
+    type: pos_customer_widget
+    weight: 0
+    region: content
+    settings:
+      num_results: 10
+      placeholder: 'Enter a name, email, or phone number'
+      size: 60
+    third_party_settings: {  }
+hidden:
+  billing_profile: true
+  created: true
+  field_cashier: true
+  field_register: true
+  ip_address: true
+  order_number: true
+  state: true
+  store_id: true

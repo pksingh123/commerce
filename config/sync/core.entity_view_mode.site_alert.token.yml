@@ -1,0 +1,10 @@
+uuid: f4312f3c-7947-4600-9105-b4b3749178b9
+langcode: en
+status: true
+dependencies:
+  module:
+    - site_alert
+id: site_alert.token
+label: Token
+targetEntityType: site_alert
+cache: true

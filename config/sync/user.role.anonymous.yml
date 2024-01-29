@@ -1,0 +1,41 @@
+uuid: f25f37ac-563a-4638-afcd-f44b3e83e2d8
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.restricted_html
+  module:
+    - bootstrap_site_alert
+    - comment
+    - commerce_checkout
+    - commerce_product
+    - contact
+    - filter
+    - media
+    - popup_message
+    - search
+    - site_alert
+    - sitewide_alert
+    - system
+_core:
+  default_config_hash: 6WavjUYXIegP9AAg2zXGx54MWIVoomC3SZhNiqe-Dyk
+id: anonymous
+label: 'Anonymous user'
+weight: 0
+is_admin: false
+permissions:
+  - 'access checkout'
+  - 'access comments'
+  - 'access content'
+  - 'access site-wide contact form'
+  - 'add site alerts'
+  - 'administer site alert'
+  - 'delete site alerts'
+  - 'display popup message'
+  - 'search content'
+  - 'update site alerts'
+  - 'use text format restricted_html'
+  - 'view bootstrap site alerts'
+  - 'view commerce_product'
+  - 'view media'
+  - 'view published sitewide alert entities'

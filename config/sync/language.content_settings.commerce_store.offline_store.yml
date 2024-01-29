@@ -1,0 +1,11 @@
+uuid: ea4af451-9100-4e63-9c26-7e0ef1ea5613
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_store.commerce_store_type.offline_store
+id: commerce_store.offline_store
+target_entity_type_id: commerce_store
+target_bundle: offline_store
+default_langcode: site_default
+language_alterable: false

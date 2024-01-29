@@ -1,0 +1,11 @@
+uuid: 241f563a-a55b-4254-94b1-8790c70acedc
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_store.commerce_store_type.physical
+id: commerce_store.physical
+target_entity_type_id: commerce_store
+target_bundle: physical
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,25 @@
+uuid: fc210138-76d5-4e81-a5e9-d33f1ffbfb40
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.page
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+      entity_translation_unified_form_enable: '0'
+      entity_translation_unified_form_theme: EntityTranslationUnifiedFormInlineMode
+      entity_translation_unified_form_language: current
+      entity_translation_unified_form_translate_labels: '0'
+      entity_translation_unified_form_sbs_enable: '0'
+      entity_translation_unified_form_moderation_sync_disable: '0'
+      entity_translation_unified_form_save_only_button: '0'
+id: node.page
+target_entity_type_id: node
+target_bundle: page
+default_langcode: site_default
+language_alterable: true

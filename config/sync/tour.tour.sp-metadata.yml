@@ -1,0 +1,63 @@
+uuid: 03f77740-8d3e-48b2-8599-0ee7cf7e6c21
+langcode: en
+status: true
+dependencies:
+  module:
+    - miniorange_saml
+_core:
+  default_config_hash: U8ImTn0QgNguL_qoybRdLynLwlmv4Top8X5HVv2VlKg
+id: sp-metadata
+label: 'SP Metadata'
+module: miniorange_saml
+routes:
+  -
+    route_name: miniorange_saml.idp_setup
+tips:
+  service-provider-metadata:
+    id: service-provider-metadata
+    plugin: text
+    label: 'Service Provider Metadata'
+    weight: -100
+    position: auto
+    selector: null
+    body: "You can provide metadata in 3 different ways to your Identity Provider (IdP) \r\n<ul>\r\n<li>URL</li>\r\n<li>XML File</li>\r\n<li>Manually</li>\r\n</ul>\r\n"
+  url:
+    id: url
+    plugin: text
+    label: URL
+    weight: -99
+    position: right-start
+    selector: '#idp_metadata_url'
+    body: 'Provide this Metadata URL to configure your Identity Provider (IdP).'
+  xml-file:
+    id: xml-file
+    plugin: text
+    label: 'XML File'
+    weight: -98
+    position: right
+    selector: '#metadata-download-button'
+    body: 'Click on this button to download metadata in an XML file.'
+  manually:
+    id: manually
+    plugin: text
+    label: Manually
+    weight: -97
+    position: auto
+    selector: '#metadata-table'
+    body: 'You can also manually configure your Identity Provider (IdP) using the information given here.'
+  documentation:
+    id: documentation
+    plugin: text
+    label: Documentation
+    weight: -96
+    position: auto
+    selector: '#mo_guide_vt'
+    body: 'To see detailed documentation of how to configure this module with any Identity Provider (IdP).'
+  more-help:
+    id: more-help
+    plugin: text
+    label: 'More Help'
+    weight: -95
+    position: bottom
+    selector: '#contact_us_button'
+    body: 'Need any help? Just send us a query and we will get back to you soon.'

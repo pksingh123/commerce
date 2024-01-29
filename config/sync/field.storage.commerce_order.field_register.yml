@@ -1,0 +1,22 @@
+uuid: 15020dca-88e5-48bf-a56a-512e73e94cea
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_order
+    - commerce_pos
+_core:
+  default_config_hash: yWOXKw9eAYiYy_xukSVJe6cftO8v1Ur4D2E9L-6JBwA
+id: commerce_order.field_register
+field_name: field_register
+entity_type: commerce_order
+type: entity_reference
+settings:
+  target_type: commerce_pos_register
+module: core
+locked: false
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

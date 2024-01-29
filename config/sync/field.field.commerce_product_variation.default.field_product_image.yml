@@ -1,0 +1,113 @@
+uuid: 6db42b95-0bae-454d-ac49-79e4de5395ee
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.default
+    - field.storage.commerce_product_variation.field_product_image
+    - media.type.product_image
+  module:
+    - dynamic_entity_reference
+id: commerce_product_variation.default.field_product_image
+field_name: field_product_image
+entity_type: commerce_product_variation
+bundle: default
+label: 'Product Image'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  media:
+    handler: 'default:media'
+    handler_settings:
+      target_bundles:
+        product_image: product_image
+      sort:
+        field: _none
+        direction: ASC
+      auto_create: false
+      auto_create_bundle: ''
+  comment:
+    handler: 'default:comment'
+    handler_settings: {  }
+  contact_message:
+    handler: 'default:contact_message'
+    handler_settings: {  }
+  node:
+    handler: 'default:node'
+    handler_settings: {  }
+  block_content:
+    handler: 'default:block_content'
+    handler_settings: {  }
+  commerce_promotion_coupon:
+    handler: 'default:commerce_promotion_coupon'
+    handler_settings: {  }
+  custom_entity_example:
+    handler: 'default:custom_entity_example'
+    handler_settings: {  }
+  menu_link_content:
+    handler: 'default:menu_link_content'
+    handler_settings: {  }
+  file:
+    handler: 'default:file'
+    handler_settings: {  }
+  commerce_order:
+    handler: 'default:commerce_order'
+    handler_settings: {  }
+  commerce_order_item:
+    handler: 'default:commerce_order_item'
+    handler_settings: {  }
+  commerce_payment:
+    handler: 'default:commerce_payment'
+    handler_settings: {  }
+  commerce_payment_method:
+    handler: 'default:commerce_payment_method'
+    handler_settings: {  }
+  commerce_product:
+    handler: 'default:commerce_product'
+    handler_settings: {  }
+  commerce_product_attribute_value:
+    handler: 'default:commerce_product_attribute_value'
+    handler_settings: {  }
+  commerce_product_variation:
+    handler: 'default:commerce_product_variation'
+    handler_settings: {  }
+  profile:
+    handler: 'default:profile'
+    handler_settings: {  }
+  commerce_promotion:
+    handler: 'default:commerce_promotion'
+    handler_settings: {  }
+  redirect:
+    handler: 'default:redirect'
+    handler_settings: {  }
+  salesforce_mapped_object:
+    handler: 'default:salesforce_mapped_object'
+    handler_settings: {  }
+  search_api_task:
+    handler: 'default:search_api_task'
+    handler_settings: {  }
+  shortcut:
+    handler: 'default:shortcut'
+    handler_settings: {  }
+  site_alert:
+    handler: 'default:site_alert'
+    handler_settings: {  }
+  sitewide_alert:
+    handler: 'default:sitewide_alert'
+    handler_settings: {  }
+  commerce_store:
+    handler: 'default:commerce_store'
+    handler_settings: {  }
+  taxonomy_term:
+    handler: 'default:taxonomy_term'
+    handler_settings: {  }
+  path_alias:
+    handler: 'default:path_alias'
+    handler_settings: {  }
+  user:
+    handler: 'default:user'
+    handler_settings: {  }
+field_type: dynamic_entity_reference

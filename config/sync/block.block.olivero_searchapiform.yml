@@ -1,0 +1,29 @@
+uuid: d6eeee66-8946-4727-8880-e0b86ce3158d
+langcode: en
+status: true
+dependencies:
+  module:
+    - search_api_block
+  theme:
+    - olivero
+id: olivero_searchapiform
+theme: olivero
+region: highlighted
+weight: -9
+provider: null
+plugin: search_api_form_block
+settings:
+  id: search_api_form_block
+  label: 'Search API form'
+  label_display: '0'
+  provider: search_api_block
+  context_mapping:
+    entity: '@node.node_route_context:node'
+  action_url: /search
+  input_name: keys
+  input_placeholder: ''
+  submit_value: ''
+  pass_get_params: 1
+  input_label: ''
+  input_label_visibility: invisible
+visibility: {  }

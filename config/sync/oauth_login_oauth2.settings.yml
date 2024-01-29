@@ -1,0 +1,21 @@
+miniorange_oauth_client_customer_id: ''
+miniorange_oauth_client_customer_admin_token: ''
+miniorange_oauth_client_customer_api_key: ''
+miniorange_oauth_client_status: ''
+miniorange_oauth_client_customer_admin_phone: null
+miniorange_oauth_client_tx_id: null
+miniorange_oauth_client_customer_admin_password: ''
+miniorange_oauth_client_base_url: ''
+miniorange_oauth_enable_login_with_oauth: true
+miniorange_oauth_send_with_header_oauth: false
+miniorange_oauth_send_with_body_oauth: true
+miniorange_auth_client_access_token_status: ''
+miniorange_auth_client_userinfo_status: 'Did not reach'
+miniorange_auth_client_test_configuration_status: 'Did not try'
+miniorange_auth_client_sso_status: 'Did not try'
+_core:
+  default_config_hash: Gsf7QNhskndX6LxDr_YCUtkE0jTOPHG4_OKhQ4QkaJk
+miniorange_oauth_client_username_attribute: ''
+miniorange_oauth_login_config_status: client_credentials
+miniorange_oauth_login_config_application: salesforce
+miniorange_auth_client_callback_uri: 'http://local.drupal10.com/mo_login'

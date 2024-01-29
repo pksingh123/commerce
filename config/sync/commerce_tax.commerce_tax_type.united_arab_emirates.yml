@@ -1,0 +1,24 @@
+uuid: cf9d040d-b223-48f3-85e1-1ff829b97c20
+langcode: en
+status: true
+dependencies: {  }
+id: united_arab_emirates
+label: '  United Arab Emirates'
+plugin: custom
+configuration:
+  display_inclusive: true
+  display_label: tax
+  round: true
+  rates:
+    -
+      id: 295ad4ec-62a1-4071-9516-949d67135390
+      label: '5 % Vat'
+      percentage: '0.05'
+  territories:
+    -
+      country_code: AE
+      administrative_area: DU
+      locality: null
+      dependent_locality: null
+conditions: {  }
+conditionOperator: AND

@@ -1,0 +1,51 @@
+uuid: 6303a528-a77e-465f-bbab-06adc8789955
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.basic_html
+  module:
+    - bootstrap_site_alert
+    - comment
+    - commerce_checkout
+    - commerce_order
+    - commerce_payment
+    - commerce_product
+    - contact
+    - file
+    - filter
+    - media
+    - popup_message
+    - search
+    - shortcut
+    - site_alert
+    - sitewide_alert
+    - system
+_core:
+  default_config_hash: cFrlqjtkTfvY3RGccjJkPf1SGIfJ942IrxTLWAO4mgA
+id: authenticated
+label: 'Authenticated user'
+weight: 1
+is_admin: false
+permissions:
+  - 'access checkout'
+  - 'access comments'
+  - 'access content'
+  - 'access shortcuts'
+  - 'access site-wide contact form'
+  - 'add site alerts'
+  - 'administer site alert'
+  - 'delete own files'
+  - 'delete site alerts'
+  - 'display popup message'
+  - 'manage own commerce_payment_method'
+  - 'post comments'
+  - 'search content'
+  - 'skip comment approval'
+  - 'update site alerts'
+  - 'use text format basic_html'
+  - 'view bootstrap site alerts'
+  - 'view commerce_product'
+  - 'view media'
+  - 'view own commerce_order'
+  - 'view published sitewide alert entities'

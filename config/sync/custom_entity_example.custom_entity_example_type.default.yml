@@ -1,0 +1,11 @@
+uuid: e697c8cd-bd59-46b6-a582-6600d4eb5473
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: gY8u2AhC66EnlZmRvdxUD67TQtfHmxhjNjwHPxpHpM4
+id: default
+label: 'Custom Entity Example'
+description: ''
+traits: null
+locked: null

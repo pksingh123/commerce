@@ -1,0 +1,36 @@
+uuid: cc8dab24-b02b-46b0-a6ec-71d735952d7c
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_order.commerce_order_type.pos
+    - field.storage.commerce_order.field_cashier
+  enforced:
+    module:
+      - commerce_pos
+_core:
+  default_config_hash: EcaDpPLIwWhjxFG_t4w1aR4R96Gdx7f-_6TnihisXD0
+id: commerce_order.pos.field_cashier
+field_name: field_cashier
+entity_type: commerce_order
+bundle: pos
+label: Cashier
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    target_bundles: null
+    sort:
+      field: _none
+    auto_create: false
+    filter:
+      type: role
+      role:
+        pos_cashier: pos_cashier
+        administrator: '0'
+    include_anonymous: false
+field_type: entity_reference

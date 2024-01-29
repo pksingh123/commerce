@@ -1,0 +1,61 @@
+display:
+  default:
+    display_title: الافتراضي
+    display_options:
+      fields:
+        comment_bulk_form:
+          action_title: إجراء
+        subject:
+          separator: ', '
+        uid:
+          separator: ', '
+        name:
+          separator: ', '
+        entity_id:
+          separator: ', '
+        changed:
+          label: التحديث
+          separator: ', '
+        operations:
+          label: عمليات
+        name_1:
+          separator: ', '
+      pager:
+        options:
+          expose:
+            items_per_page_options_all_label: '- الكل -'
+            offset_label: الإزاحة
+      exposed_form:
+        options:
+          reset_button_label: 'إعادة الضبط'
+          exposed_sorts_label: 'الترتيب حسب'
+          sort_asc_label: تصاعدي
+          sort_desc_label: تنازلي
+      filters:
+        langcode:
+          expose:
+            label: اللغة
+  page_unapproved:
+    display_options:
+      fields:
+        comment_bulk_form:
+          action_title: إجراء
+        subject:
+          separator: ', '
+        uid:
+          separator: ', '
+        name:
+          separator: ', '
+        entity_id:
+          separator: ', '
+        changed:
+          label: التحديث
+          separator: ', '
+        operations:
+          label: عمليات
+        name_1:
+          separator: ', '
+      filters:
+        langcode:
+          expose:
+            label: اللغة

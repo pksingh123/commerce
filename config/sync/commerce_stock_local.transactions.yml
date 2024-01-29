@@ -1,0 +1,4 @@
+_core:
+  default_config_hash: IH1rE_cFWMPS-lSEgCGhEXNx4SuN11jYD4hFWcmKzq8
+transactions_aggregation_mode: cron
+transactions_retention: keep

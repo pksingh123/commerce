@@ -1,0 +1,63 @@
+uuid: a439d1eb-e2e1-4d3c-9417-6cdcf1c12c7d
+langcode: en
+status: true
+dependencies:
+  config:
+    - search_api.server.pos_server
+  module:
+    - commerce_product
+    - search_api
+id: pos_server_indexing
+name: 'POS Server Indexing'
+description: ''
+read_only: false
+field_settings:
+  sku:
+    label: SKU
+    datasource_id: 'entity:commerce_product_variation'
+    property_path: sku
+    type: text
+    boost: 2.0
+    dependencies:
+      module:
+        - commerce_product
+  stores:
+    label: 'Product » Product » Stores'
+    datasource_id: 'entity:commerce_product_variation'
+    property_path: 'product_id:entity:stores'
+    type: integer
+    dependencies:
+      module:
+        - commerce_product
+  title:
+    label: Title
+    datasource_id: 'entity:commerce_product_variation'
+    property_path: title
+    type: text
+    boost: 2.0
+    dependencies:
+      module:
+        - commerce_product
+datasource_settings:
+  'entity:commerce_product_variation':
+    bundles:
+      default: true
+      selected: {  }
+    languages:
+      default: true
+      selected: {  }
+processor_settings:
+  add_url: {  }
+  aggregated_field: {  }
+  custom_value: {  }
+  entity_type: {  }
+  language_with_fallback: {  }
+  rendered_item: {  }
+tracker_settings:
+  default:
+    indexing_order: fifo
+options:
+  cron_limit: 50
+  index_directly: true
+  track_changes_in_references: true
+server: pos_server

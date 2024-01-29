@@ -1,0 +1,13 @@
+uuid: 99c3c397-d64e-46cc-b6cf-66ee337a1d0e
+langcode: en
+status: true
+dependencies: {  }
+id: product_image
+label: 'Product Image'
+description: 'Use local images for Product media.'
+source: image
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: field_media_image
+field_map: {  }

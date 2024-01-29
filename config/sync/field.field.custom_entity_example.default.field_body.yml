@@ -1,0 +1,28 @@
+uuid: b08e6da9-4160-4aa9-85b8-7ba1b8e99b63
+langcode: en
+status: true
+dependencies:
+  config:
+    - custom_entity_example.custom_entity_example_type.default
+    - field.storage.custom_entity_example.field_body
+    - filter.format.basic_html
+  module:
+    - text
+_core:
+  default_config_hash: J5ktEjpim-tWF6rs8GJPcrLymepP8pakjxUCOau_z5A
+id: custom_entity_example.default.field_body
+field_name: field_body
+entity_type: custom_entity_example
+bundle: default
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+  allowed_formats:
+    - basic_html
+field_type: text_with_summary

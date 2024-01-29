@@ -1,0 +1,28 @@
+display:
+  default:
+    display_title: الرئيسي
+    display_options:
+      exposed_form:
+        options:
+          submit_button: تطبيق
+          reset_button_label: 'إعادة الضبط'
+          exposed_sorts_label: 'الترتيب حسب'
+          sort_asc_label: تصاعدي
+          sort_desc_label: تنازلي
+      fields:
+        purchased_entity:
+          separator: ', '
+        unit_price__number:
+          label: السعر
+          separator: ', '
+        edit_quantity:
+          label: الكمية
+        remove_button:
+          label: حذف
+        total_price__number:
+          label: المجموع
+          separator: ', '
+      arguments:
+        order_id:
+          exception:
+            title: الكل

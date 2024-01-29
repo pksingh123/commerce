@@ -1,0 +1,33 @@
+uuid: 334efd0d-0720-478e-9787-02c8024ab431
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.product_image.field_media_image
+    - image.style.large
+    - media.type.product_image
+  module:
+    - image
+id: media.product_image.default
+targetEntityType: media
+bundle: product_image
+mode: default
+content:
+  field_media_image:
+    type: image
+    label: visually_hidden
+    settings:
+      image_link: ''
+      image_style: large
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  created: true
+  langcode: true
+  name: true
+  search_api_excerpt: true
+  thumbnail: true
+  uid: true

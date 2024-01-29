@@ -1,0 +1,19 @@
+uuid: 7be2cd91-98c7-49ec-8999-1f771710fc39
+langcode: en
+status: true
+dependencies:
+  module:
+    - search_api_db
+_core:
+  default_config_hash: UfcQBtxEayF80JHi0nrg7zMKxdprWbXzsZAySYTJNYA
+id: pos
+name: Pos
+description: ''
+backend: search_api_db
+backend_config:
+  database: 'default:default'
+  min_chars: 1
+  matching: partial
+  autocomplete:
+    suggest_suffix: true
+    suggest_words: true

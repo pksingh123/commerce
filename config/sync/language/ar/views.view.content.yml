@@ -1,0 +1,33 @@
+display:
+  default:
+    display_title: الافتراضي
+    display_options:
+      fields:
+        title:
+          label: العنوان
+        type:
+          separator: ', '
+        status:
+          label: الحالة
+        changed:
+          label: التحديث
+        operations:
+          label: عمليات
+      exposed_form:
+        options:
+          reset_button_label: 'إعادة الضبط'
+          exposed_sorts_label: 'الترتيب حسب'
+          sort_asc_label: تصاعدي
+          sort_desc_label: تنازلي
+      filters:
+        title:
+          expose:
+            label: العنوان
+        status:
+          expose:
+            label: الحالة
+        langcode:
+          expose:
+            label: اللغة
+  page_1:
+    display_title: الصفحة

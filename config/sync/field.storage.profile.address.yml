@@ -1,0 +1,24 @@
+uuid: cacd173a-1864-4496-ad75-65020eec5a0c
+langcode: en
+status: true
+dependencies:
+  module:
+    - address
+    - profile
+  enforced:
+    module:
+      - commerce_order
+_core:
+  default_config_hash: 7bB4yBo--Mezm_PhFRPPxFA7NRyFY7a2p8FxJTMbfQY
+id: profile.address
+field_name: address
+entity_type: profile
+type: address
+settings: {  }
+module: address
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

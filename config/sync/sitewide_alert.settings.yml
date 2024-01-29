@@ -1,0 +1,8 @@
+_core:
+  default_config_hash: iXgDYIi5brO7l4K9hnoq_SeN8roEdx40M4d8gdlqOk8
+show_on_admin: 0
+alert_styles: primary|Default
+display_order: ascending
+refresh_interval: 15
+automatic_refresh: 0
+cache_max_age: 15

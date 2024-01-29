@@ -1,0 +1,71 @@
+uuid: de1fa24c-777f-4357-a9e3-d60a6edea837
+langcode: en
+status: true
+dependencies:
+  module:
+    - miniorange_saml
+_core:
+  default_config_hash: lX7svODDBCx8sNjwrM6cRpzE-NtstAw2lttO7gF9MjM
+id: mapping
+label: Mapping
+module: miniorange_saml
+routes:
+  -
+    route_name: miniorange_saml.mapping
+tips:
+  attribute-role-mapping:
+    id: attribute-role-mapping
+    plugin: text
+    label: 'Attribute and Role Mapping'
+    weight: -100
+    position: auto
+    selector: null
+    body: 'You can find attribute mapping, role mapping, and more in this tab.'
+  role-mapping:
+    id: role-mapping
+    plugin: text
+    label: 'Role Mapping'
+    weight: -99
+    position: right
+    selector: '#role-mapping-checkbox'
+    body: 'Check this option if you want to enable Role Mapping.'
+  default-group:
+    id: default-group
+    plugin: text
+    label: 'Default Group'
+    weight: -98
+    position: right
+    selector: '#Default_Mapping'
+    body: 'You can select the default group for the users after SSO for the first time. '
+  custom-role-mapping:
+    id: custom-role-mapping
+    plugin: text
+    label: 'Custom Role Mapping'
+    weight: -97
+    position: auto
+    selector: '#custom-role-mapping-details'
+    body: 'You can map Identity Provider (IdP) roles to Your Service Provider (SP) roles here.'
+  basic-attribute-mapping:
+    id: basic-attribute-mapping
+    plugin: text
+    label: 'Basic Attribute Mapping'
+    weight: -96
+    position: right
+    selector: '#basing-mapping-details'
+    body: 'You can map basic attributes here.'
+  custom-attribute-mapping:
+    id: custom-attribute-mapping
+    plugin: text
+    label: 'Custom Attribute Mapping'
+    weight: -95
+    position: right
+    selector: '#custom-attribute-mapping-details'
+    body: 'You can map custom/additional attributes here.'
+  profile-module-mapping:
+    id: profile-module-mapping
+    plugin: text
+    label: 'Profile Module Mapping'
+    weight: -93
+    position: right
+    selector: '#profile-mapping-details'
+    body: 'You can map Identity Provider (IdP) attributes with the profile module here.'

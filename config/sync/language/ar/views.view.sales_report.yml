@@ -1,0 +1,60 @@
+display:
+  default:
+    display_title: الرئيسي
+    display_options:
+      exposed_form:
+        options:
+          submit_button: تطبيق
+          reset_button_label: 'إعادة الضبط'
+          exposed_sorts_label: 'الترتيب حسب'
+          sort_asc_label: تصاعدي
+          sort_desc_label: تنازلي
+      fields:
+        created:
+          label: التاريخ
+          separator: ', '
+        amount:
+          separator: ', '
+        amount_1:
+          separator: ', '
+  daily:
+    display_title: يوميًا
+    display_options:
+      menu:
+        title: يوميًا
+      fields:
+        created:
+          label: التاريخ
+          separator: ', '
+        amount:
+          separator: ', '
+        amount_1:
+          separator: ', '
+  monthly:
+    display_title: شهرياً
+    display_options:
+      menu:
+        title: شهرياً
+  weekly:
+    display_title: أسبوعيًا
+    display_options:
+      menu:
+        title: أسبوعيًا
+      fields:
+        created:
+          label: التاريخ
+          separator: ', '
+        amount:
+          separator: ', '
+        amount_1:
+          separator: ', '
+  yearly:
+    display_options:
+      fields:
+        created:
+          label: التاريخ
+          separator: ', '
+        amount:
+          separator: ', '
+        amount_1:
+          separator: ', '

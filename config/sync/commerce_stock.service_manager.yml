@@ -1,0 +1,3 @@
+default_service_id: local_stock
+stock_events_plugin_id: core_stock_events
+commerce_product_variation_default_service_id: local_stock

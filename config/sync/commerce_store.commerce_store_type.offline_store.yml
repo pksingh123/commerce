@@ -1,0 +1,9 @@
+uuid: 491c4912-97b4-4314-b4d5-406e856b8d21
+langcode: en
+status: true
+dependencies: {  }
+id: offline_store
+label: 'Offline store'
+traits: {  }
+locked: false
+description: ''

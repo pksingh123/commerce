@@ -1,0 +1,165 @@
+uuid: 9ad6d804-b220-4513-a207-ee96a10eca9a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.commerce_product.body
+    - field.storage.commerce_product_variation.field_upc
+    - search_api.server.pos
+  module:
+    - commerce_product
+    - search_api
+_core:
+  default_config_hash: qU--fMnLsNgMl7-BpwOVSC0-9A_GmkpCklrapUNNOA0
+id: pos
+name: 'Commerce POS'
+description: 'Basic POS index created by the Commerce POS module'
+read_only: false
+field_settings:
+  body:
+    label: 'Product » Product » Body'
+    datasource_id: 'entity:commerce_product_variation'
+    property_path: 'product_id:entity:body'
+    type: text
+    boost: 0.5
+    dependencies:
+      config:
+        - field.storage.commerce_product.body
+      module:
+        - commerce_product
+  field_upc:
+    label: UPC
+    datasource_id: 'entity:commerce_product_variation'
+    property_path: field_upc
+    type: text
+    dependencies:
+      config:
+        - field.storage.commerce_product_variation.field_upc
+  sku:
+    label: SKU
+    datasource_id: 'entity:commerce_product_variation'
+    property_path: sku
+    type: text
+    boost: 2.0
+    dependencies:
+      module:
+        - commerce_product
+  stores:
+    label: 'Product » Product » Stores'
+    datasource_id: 'entity:commerce_product_variation'
+    property_path: 'product_id:entity:stores'
+    type: integer
+    dependencies:
+      module:
+        - commerce_product
+  title:
+    label: Title
+    datasource_id: 'entity:commerce_product_variation'
+    property_path: title
+    type: text
+    dependencies:
+      module:
+        - commerce_product
+  title_1:
+    label: 'Product » Product » Title'
+    datasource_id: 'entity:commerce_product_variation'
+    property_path: 'product_id:entity:title'
+    type: text
+    dependencies:
+      module:
+        - commerce_product
+datasource_settings:
+  'entity:commerce_product_variation':
+    bundles:
+      default: true
+      selected: {  }
+    languages:
+      default: true
+      selected: {  }
+processor_settings:
+  add_url: {  }
+  aggregated_field: {  }
+  custom_value: {  }
+  entity_type: {  }
+  html_filter:
+    weights:
+      preprocess_index: -50
+      preprocess_query: -50
+    all_fields: true
+    fields:
+      - body
+      - field_upc
+      - sku
+      - title
+      - title_1
+    title: true
+    alt: true
+    tags:
+      b: 2
+      em: 1
+      h1: 5
+      h2: 3
+      h3: 2
+      strong: 2
+      u: 1
+  ignorecase:
+    weights:
+      preprocess_index: -49
+      preprocess_query: -49
+    all_fields: true
+    fields:
+      - body
+      - field_upc
+      - sku
+      - title
+      - title_1
+  language_with_fallback: {  }
+  rendered_item: {  }
+  stemmer:
+    weights:
+      preprocess_index: -46
+      preprocess_query: -44
+    all_fields: true
+    fields:
+      - body
+      - field_upc
+      - sku
+      - title
+      - title_1
+    exceptions:
+      mexican: mexic
+      texan: texa
+  tokenizer:
+    weights:
+      preprocess_index: -47
+      preprocess_query: -46
+    all_fields: true
+    fields:
+      - body
+      - field_upc
+      - sku
+      - title
+      - title_1
+    spaces: ''
+    ignored: ._-
+    overlap_cjk: 1
+    minimum_word_size: '1'
+  transliteration:
+    weights:
+      preprocess_index: -48
+      preprocess_query: -48
+    all_fields: true
+    fields:
+      - body
+      - field_upc
+      - sku
+      - title
+      - title_1
+tracker_settings:
+  default:
+    indexing_order: fifo
+options:
+  cron_limit: 50
+  index_directly: true
+  track_changes_in_references: true
+server: pos

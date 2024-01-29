@@ -1,0 +1,21 @@
+uuid: 7b7b20b8-50a8-450d-8af9-81076275344e
+langcode: en
+status: true
+dependencies:
+  module:
+    - custom_entity_example
+    - text
+_core:
+  default_config_hash: Bl76MxZAdZn7zojxY0DNVOWXvipqO5S9HcH-LJzUNvU
+id: custom_entity_example.field_body
+field_name: field_body
+entity_type: custom_entity_example
+type: text_with_summary
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

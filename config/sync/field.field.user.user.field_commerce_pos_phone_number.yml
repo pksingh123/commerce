@@ -1,0 +1,26 @@
+uuid: 4dcc9e98-63d7-4cb5-8131-0f7ba9f3f33f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_commerce_pos_phone_number
+  module:
+    - telephone
+    - user
+  enforced:
+    module:
+      - commerce_pos
+_core:
+  default_config_hash: SSK8YJrjYofew-FkFUvBRQigZzu5J5jkftbL-h1Qq5k
+id: user.user.field_commerce_pos_phone_number
+field_name: field_commerce_pos_phone_number
+entity_type: user
+bundle: user
+label: 'Phone Number'
+description: 'Phone number of Commerce POS users.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: telephone

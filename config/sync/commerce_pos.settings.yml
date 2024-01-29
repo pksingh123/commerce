@@ -1,0 +1,18 @@
+_core:
+  default_config_hash: 64LqR8o2ojWmq0BnImcsN1Q9QcptV434rSaptlGWhpE
+order_lookup_limit: 10
+product_search_server: pos_server
+product_search_index: pos_server_indexing
+look_and_feel_login_bg: {  }
+look_and_feel_store_logo: {  }
+look_and_feel_accent_colour: '#000000'
+default_payment_gateway: pos_cash
+look_and_feel_excluded_cards:
+  - visa
+  - mastercard
+  - maestro
+  - amex
+  - dinersclub
+  - discover
+  - jcb
+  - unionpay

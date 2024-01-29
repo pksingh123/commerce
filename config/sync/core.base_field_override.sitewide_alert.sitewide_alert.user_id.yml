@@ -1,0 +1,20 @@
+uuid: 67360ed5-a743-4a86-b85f-5a7f18843d31
+langcode: en
+status: true
+dependencies:
+  module:
+    - sitewide_alert
+id: sitewide_alert.sitewide_alert.user_id
+field_name: user_id
+entity_type: sitewide_alert
+bundle: sitewide_alert
+label: 'Authored by'
+description: 'The user ID of author of this Sitewide Alert.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

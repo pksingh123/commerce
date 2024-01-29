@@ -1,0 +1,46 @@
+display:
+  default:
+    display_title: الافتراضي
+    display_options:
+      exposed_form:
+        options:
+          submit_button: تطبيق
+          reset_button_label: 'إعادة الضبط'
+          exposed_sorts_label: 'الترتيب حسب'
+          sort_asc_label: تصاعدي
+          sort_desc_label: تنازلي
+      pager:
+        options:
+          expose:
+            items_per_page_options_all_label: '- الكل -'
+            offset_label: الإزاحة
+      fields:
+        name:
+          label: الاسم
+          separator: ', '
+        offer__target_plugin_id:
+          separator: ', '
+        usage_limit:
+          separator: ', '
+        usage_limit_customer:
+          separator: ', '
+        start_date:
+          separator: ', '
+        end_date:
+          separator: ', '
+        operations:
+          label: عمليات
+      filters:
+        name:
+          expose:
+            label: الاسم
+        status:
+          expose:
+            label: الحالة
+  admin:
+    display_title: الصفحة
+    display_options:
+      menu:
+        title: لائحة
+      tab_options:
+        title: لائحة

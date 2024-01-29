@@ -1,0 +1,50 @@
+uuid: 933ac37d-15aa-4d08-80f8-03f7adc77561
+langcode: en
+status: true
+dependencies:
+  config:
+    - custom_entity_example.custom_entity_example_type.default
+    - field.field.custom_entity_example.default.field_body
+  module:
+    - text
+_core:
+  default_config_hash: W22ftSVoP5R3RoS3eCPM2hlXBEL1lr4j_Zs9SH268sE
+id: custom_entity_example.default.default
+targetEntityType: custom_entity_example
+bundle: default
+mode: default
+content:
+  field_body:
+    type: text_textarea_with_summary
+    weight: 1
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  uid: true

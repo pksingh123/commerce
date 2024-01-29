@@ -1,0 +1,6 @@
+_core:
+  default_config_hash: Z68G6crRW4T2dDSCo8tCO9NTcZiIFg8ZwNaUkeQBt_s
+header: '(logo??)<br />Company Name/Store#<br />Address line 1<br />Address line 2<br />Phone #'
+footer: '<p>Thanks for shopping at CompanyName!<br>Return Policy --<br>Exchange Policy --<br>Company Motto<br>Website --<br><br>(optional)<br>Visit our website for a chance to --</p>'
+header_format: basic_html
+footer_format: basic_html

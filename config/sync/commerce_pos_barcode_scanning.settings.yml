@@ -1,0 +1,5 @@
+_core:
+  default_config_hash: EzunBkCGA7ibYUBUHE59mwR5NTmfGrLlliX6hxi6edk
+status_on_load: open
+close_after_scanning: open
+delay: 1000

@@ -1,0 +1,29 @@
+uuid: 74801ac1-bfb9-49ce-9ac8-2bac2f5b4b8a
+langcode: en
+status: true
+dependencies:
+  config:
+    - custom_entity_example.custom_entity_example_type.default
+    - field.field.custom_entity_example.default.field_body
+  module:
+    - text
+_core:
+  default_config_hash: bHzmzLMBuIfGKeBAbjcGTaRCn_KEnOZFZJR3w17w3VQ
+id: custom_entity_example.default.default
+targetEntityType: custom_entity_example
+bundle: default
+mode: default
+content:
+  field_body:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  created: true
+  langcode: true
+  name: true
+  search_api_excerpt: true
+  uid: true

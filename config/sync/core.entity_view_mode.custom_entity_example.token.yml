@@ -1,0 +1,10 @@
+uuid: e7a980c7-b6a9-4e35-85cb-34f9f34230bf
+langcode: en
+status: true
+dependencies:
+  module:
+    - custom_entity_example
+id: custom_entity_example.token
+label: Token
+targetEntityType: custom_entity_example
+cache: true

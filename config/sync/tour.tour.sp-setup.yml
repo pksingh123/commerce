@@ -1,0 +1,87 @@
+uuid: 3ce769fb-5cd1-4543-85d2-dda37cb8d313
+langcode: en
+status: true
+dependencies:
+  module:
+    - miniorange_saml
+_core:
+  default_config_hash: yt295St0MHSbDI_JdkwvMS7rIKZD2AFs6kDvyMMkskQ
+id: sp-setup
+label: 'SP Setup'
+module: miniorange_saml
+routes:
+  -
+    route_name: miniorange_saml.sp_setup
+tips:
+  service-provider-setup:
+    id: service-provider-setup
+    plugin: text
+    label: 'Service Provider Setup'
+    weight: -100
+    position: auto
+    selector: null
+    body: 'Configure Drupal as Service Provider (SP) on this tab using the Identity Provider (IdP) information you get from IDP-Metadata XML.'
+  upload-your-metadata:
+    id: upload-your-metadata
+    plugin: text
+    label: 'Upload Your Metadata'
+    weight: -99
+    position: auto
+    selector: '#upload-metadata-details'
+    body: 'If you have a metadata URL or XML file provided by your Identity Provider (IdP), click on the Upload IDP Metadata otherwise you can configure the module manually.'
+  identity-provider-name:
+    id: identity-provider-name
+    plugin: text
+    label: 'Identity Provider Name'
+    weight: -98
+    position: auto
+    selector: '#miniorange_saml_idp_name_div'
+    body: 'Enter the appropriate name for your Identity Provider (IdP)'
+  idp-entity-id:
+    id: idp-entity-id
+    plugin: text
+    label: 'IdP Entity ID'
+    weight: -97
+    position: right
+    selector: '#miniorange_saml_idp_issuer_div'
+    body: 'You can find the IDP EntityID/Issuer in Your IdP-Metadata XML file enclosed in the <code>EntityDescriptor</code> tag having the attribute <code>entityID</code>.'
+  login-url:
+    id: login-url
+    plugin: text
+    label: 'Login URL'
+    weight: -96
+    position: right
+    selector: '#miniorange_saml_idp_login_url_start'
+    body: 'You can find the SAML Login URL in Your IdP-Metadata XML file enclosed in the <code>SingleSignOnService</code> tag (Binding type: HTTP-Redirect)'
+  x-509-certificate:
+    id: x-509-certificate
+    plugin: text
+    label: 'x.509 Certificate'
+    weight: -95
+    position: right
+    selector: '#miniorange_saml_idp_x509_certificate_start'
+    body: 'The public key of your Identity Provider (IdP) to read the signed SAML Assertion/Response'
+  enable-login-with-saml:
+    id: enable-login-with-saml
+    plugin: text
+    label: 'Enable login with SAML'
+    weight: -94
+    position: right
+    selector: '#enable_login_with_saml'
+    body: 'You must enable the checkbox in order to perform SSO login with Identity Provider (IdP) credentials.'
+  documentation:
+    id: documentation
+    plugin: text
+    label: Documentation
+    weight: -93
+    position: auto
+    selector: '#mo_guide_vt'
+    body: 'To see detailed documentation of how to configure this module with any Identity Provider (IdP).'
+  more-help:
+    id: more-help
+    plugin: text
+    label: 'More Help'
+    weight: -92
+    position: bottom-end
+    selector: '#contact_us_button'
+    body: 'Need any help? Just send us a query and we will get back to you soon.'

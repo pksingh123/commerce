@@ -1,0 +1,15 @@
+visibility_pages: 'admin/*'
+enable: '1'
+title: promotion
+body:
+  value: '<img data-entity-uuid="fc0f034b-34d5-43e9-b893-01fbd100ebbf" data-entity-type="file" src="/sites/default/files/inline-images/promotion-img_1.jpg">'
+  format: full_html
+height: '600'
+width: '800'
+check_cookie: '0'
+expire: '0'
+delay: '0'
+close_delay: '0'
+cover_opacity: '70'
+style: light/popup.css
+visibility: '0'

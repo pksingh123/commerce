@@ -1,0 +1,10 @@
+uuid: 6df50687-b837-4280-8ba1-2c21a6203fca
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_product
+id: commerce_product_variation.default_product_comparison
+label: 'product comparison'
+targetEntityType: commerce_product_variation
+cache: true
