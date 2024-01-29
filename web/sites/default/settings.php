@@ -861,15 +861,16 @@ $settings['migrate_node_migrate_type_classic'] = FALSE;
 #   include $app_root . '/' . $site_path . '/settings.local.php';
 # }
 $databases['default']['default'] = array (
-  'database' => 'drupaltest',
+  'database' => 'commerce',
   'username' => 'root',
   'password' => 'root',
   'prefix' => '',
-  'host' => 'localhost',
+  'host' => '127.0.0.1',
   'port' => '3306',
   'isolation_level' => 'READ COMMITTED',
   'namespace' => 'Drupal\\mysql\\Driver\\Database\\mysql',
   'driver' => 'mysql',
   'autoload' => 'core/modules/mysql/src/Driver/Database/mysql/',
 );
-$settings['config_sync_directory'] = 'sites/default/files/config_-IMFKgEBoPyOOQRNPsvNpySIg07QiAu6IDXqyY2fLFtzw5lL6K-3im91QXRPfMbO7fCPSf2V3Q/sync';
+$settings['config_sync_directory'] = '../config/sync';
+ini_set('memory_limit', -1);
