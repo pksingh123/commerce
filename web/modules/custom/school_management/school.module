@@ -1,0 +1,20 @@
+<?php
+
+/**
+ * @file
+ * Defines common functionality for all School management system modules.
+ */
+/**
+ * Implements hook_theme().
+ */
+function school_theme()
+{
+    return [
+        'school' => [
+            'render element' => 'elements',
+        ],
+        'school_form' => [
+            'render element' => 'form',
+        ],
+    ];
+}

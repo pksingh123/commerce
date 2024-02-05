@@ -1,0 +1,12 @@
+name: 'School Management System'
+type: module
+description: 'School Management Systems'
+package: 'school management system'
+core_version_requirement: ^9.3 || ^10
+#configure: commerce.configuration
+dependencies:
+  - address:address
+  - entity:entity
+  - token:token
+  - drupal:datetime
+  - drupal:views

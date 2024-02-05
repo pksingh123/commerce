@@ -1,0 +1,22 @@
+{#
+/**
+ * @file
+ * Template for the school add/edit form.
+ *
+ * Available variables:
+ * - form: The form.
+ *
+ * @ingroup themeable
+ */
+#}
+<div class="layout-school-form clearfix">
+  <div class="layout-region layout-region-school-main">
+    {{ form|without('advanced', 'actions') }}
+  </div>
+  <div class="layout-region layout-region-school-secondary">
+    {{ form.advanced }}
+  </div>
+  <div class="layout-region layout-region-school-footer">
+    {{ form.actions }}
+  </div>
+</div>

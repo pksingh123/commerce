@@ -1,0 +1,17 @@
+administer school entities:
+  title: 'Administer School entities'
+  description: 'Allow to access the administration form to configure School entities.'
+  restrict access: true
+delete school entity:
+  title: Delete entity school.
+  description: 'Allow to access to Delete. the school entity'
+add school entity:
+  title: Add entity school
+  description: 'Allow to access the add form to school entity.'
+view school entity:
+  title: View entity school
+  description: 'Allow to access  to the view school entity.'
+edit school entity:
+  title: Edit entity school
+  description: 'Allow to access to the edit school entity.'
+

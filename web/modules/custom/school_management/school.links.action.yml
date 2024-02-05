@@ -1,0 +1,5 @@
+entity.school.collection:
+  route_name: entity.school.collection
+  title: 'Add School'
+  appears_on:
+    - entity.school.collection

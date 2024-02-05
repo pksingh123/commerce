@@ -1,0 +1,6 @@
+entity.school.collection:
+  title: 'Schools'
+  route_name: 'entity.school.collection'
+  #parent: 'commerce.store_configuration'
+  description: 'Manage your School.'
+  weight: -10

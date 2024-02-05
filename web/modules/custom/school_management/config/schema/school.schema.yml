@@ -1,0 +1,18 @@
+school.school_type:
+  type: school_config_entity_bundle
+  label: 'School Type'
+  mapping:
+    description:
+      type: text
+      label: 'Description'
+  entity_keys:
+    id:
+      type: string
+      label: 'ID'
+    label:
+      type: label
+      label: 'Label'
+  bundle_entity_type: school_type
+  config_export:
+    - id
+    - label
